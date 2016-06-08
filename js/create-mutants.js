@@ -18,8 +18,8 @@ function handleCreateFormSubmit(ev) {
      data: {
        mutant: mutant
      },
-     success: function(x) {
-       console.log(x.mutant_name);
+     success: function(mutant) {
+      addMutant(mutant);
      },
    });
  }
