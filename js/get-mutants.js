@@ -12,6 +12,7 @@ var url = 'https://mutant-school.herokuapp.com/api/v1/mutants';
      .removeClass('template');
 
    li.find('.mutant-name').text(mutant.mutant_name);
+   li.attr('data-id', mutant.id);
    $('#mutantList').append(li);
  }
 
